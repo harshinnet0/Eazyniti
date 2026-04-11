@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ModelsSection from './components/ModelsSection';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
@@ -23,7 +22,7 @@ import './index.css';
 const HomePage = () => (
   <>
     <Hero />
-    <ModelsSection />
+    <ModelsPage />
     <AboutPage />
     <ContactPage />
   </>
