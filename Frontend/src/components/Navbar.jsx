@@ -100,7 +100,8 @@ const Navbar = () => {
             items: [
               { name: "Business Models", link: "/models" }, 
               { name: "Our Process", link: "/process" }, 
-              { name: "Careers", link: "/careers" }
+              { name: "Careers", link: "/careers" },
+              { name: "Partner With Us", link: "/partner" }
             ]
           }
         ]
@@ -113,7 +114,7 @@ const Navbar = () => {
   const activeDropdownData = navLinks.find(link => link.name === activeDropdown);
 
   // Determine if the current page has a light background at the top
-  const lightPaths = ['/contact', '/about', '/what-we-think', '/industries', '/story-vision', '/leadership', '/tech-security', '/models', '/process', '/projects', '/careers'];
+  const lightPaths = ['/contact', '/about', '/what-we-think', '/industries', '/story-vision', '/leadership', '/tech-security', '/models', '/process', '/projects', '/careers', '/partner'];
   const isLightPage = lightPaths.includes(location.pathname) || location.pathname.startsWith('/service');
 
   // Determine Navbar base classes

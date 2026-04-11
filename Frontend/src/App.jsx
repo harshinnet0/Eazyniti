@@ -17,6 +17,7 @@ import CareersPage from './components/CareersPage';
 import ProcessPage from './components/ProcessPage';
 import ProjectsPage from './components/ProjectsPage';
 import ServiceDetailPage from './components/ServiceDetailPage';
+import PartnerPage from './components/PartnerPage';
 import './index.css';
 
 const HomePage = () => (
@@ -60,6 +61,7 @@ function App() {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/process" element={<ProcessPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/partner" element={<PartnerPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </main>

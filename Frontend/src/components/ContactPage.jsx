@@ -56,52 +56,52 @@ const ContactPage = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex-1 bg-[#1E3A8A] rounded-[3rem] p-10 md:p-14 text-white relative overflow-hidden shadow-2xl flex flex-col justify-between"
+            className="w-full lg:w-[40%] bg-[#1E3A8A] rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden shadow-xl flex flex-col justify-between"
           >
             {/* Background Decorative Element */}
-            <div className="absolute top-0 right-0 p-40 bg-[#3B82F6]/20 blur-[100px] rounded-full -mr-20 -mt-20 pointer-events-none" />
+            <div className="absolute top-0 right-0 p-32 bg-[#3B82F6]/20 blur-[80px] rounded-full -mr-16 -mt-16 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none mix-blend-overlay"></div>
 
             <div className="relative z-10">
-              <h3 className="text-3xl font-black mb-10 leading-tight">
+              <h3 className="text-2xl font-black mb-8 leading-tight">
                 Global capability,<br/>
                 <span className="text-[#14B8A6]">Local dedication.</span>
               </h3>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                    <Mail className="w-5 h-5 text-[#14B8A6]" />
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                    <Mail className="w-4 h-4 text-[#14B8A6]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Direct Inquiries</p>
-                    <a href="mailto:eazyniti@gmail.com" className="text-lg font-bold hover:text-[#14B8A6] transition-colors">eazyniti@gmail.com</a>
+                    <p className="text-[9px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Direct Inquiries</p>
+                    <a href="mailto:eazyniti@gmail.com" className="text-base font-bold hover:text-[#14B8A6] transition-colors">eazyniti@gmail.com</a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                    <Phone className="w-5 h-5 text-[#14B8A6]" />
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                    <Phone className="w-4 h-4 text-[#14B8A6]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Enterprise Support</p>
-                    <a href="tel:+918210700949" className="text-lg font-bold hover:text-[#14B8A6] transition-colors">+91 82107 00949</a>
+                    <p className="text-[9px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Enterprise Support</p>
+                    <a href="tel:+918210700949" className="text-base font-bold hover:text-[#14B8A6] transition-colors">+91 82107 00949</a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                    <MapPin className="w-5 h-5 text-[#14B8A6]" />
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                    <MapPin className="w-4 h-4 text-[#14B8A6]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Headquarters</p>
-                    <p className="text-lg font-bold">Jaipur<br/><span className="text-sm font-normal text-blue-100/80">Rajasthan, India</span></p>
+                    <p className="text-[9px] uppercase tracking-widest text-blue-200/60 font-bold mb-1">Headquarters</p>
+                    <p className="text-base font-bold">Jaipur<br/><span className="text-xs font-normal text-blue-100/80">Rajasthan, India</span></p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="relative z-10 mt-16 pt-8 border-t border-white/20 flex gap-4">
+            <div className="relative z-10 mt-12 pt-6 border-t border-white/10 flex gap-3">
                {/* Minimalist social icons */}
                {[
                  { name: 'LinkedIn', icon: FaLinkedinIn, url: '#' },
@@ -110,8 +110,8 @@ const ContactPage = () => {
                ].map(network => {
                   const Icon = network.icon;
                   return (
-                     <a href={network.url} key={network.name} className="p-3 rounded-full border border-white/20 text-white hover:bg-white hover:text-[#1E3A8A] transition-colors flex items-center justify-center">
-                        <Icon className="w-5 h-5" />
+                     <a href={network.url} key={network.name} className="p-2.5 rounded-full border border-white/20 text-white hover:bg-white hover:text-[#1E3A8A] transition-colors flex items-center justify-center">
+                        <Icon className="w-4 h-4" />
                      </a>
                   );
                })}
@@ -123,7 +123,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex-1 bg-white rounded-[3rem] p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-100"
+            className="w-full lg:w-[60%] bg-white rounded-[3rem] p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-100"
           >
             <h3 className="text-2xl font-bold text-[#1F2937] mb-8">Send us a message</h3>
             

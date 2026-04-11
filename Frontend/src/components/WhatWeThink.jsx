@@ -75,8 +75,8 @@ const WhatWeThink = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-[#3B82F6]/30 to-transparent mix-blend-overlay z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" 
-              alt="Digital Future and Innovation" 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
+              alt="Tech Team Digital Future Innovation" 
               className="w-full h-full object-cover"
             />
           </motion.div>
